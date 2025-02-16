@@ -1,0 +1,11 @@
+services:
+  - name: web-resume-mine
+    type: web
+    env: docker
+    repo: https://github.com/Phanurat/Web3-Resume-Mine
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+    autoDeploy: true
